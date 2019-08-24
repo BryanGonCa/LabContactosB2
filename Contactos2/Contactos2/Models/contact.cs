@@ -3,23 +3,23 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Contactos2.Models
 {
-    public enum Typecontact
+    public enum TypeContact
     {
         telephone,
         email,
         facebook
     }
 
-    public class contact
+    public class Contact
     {
     [Key]
-    private int contactID { get; set; }
+    private int ContactID { get; set; }
     [Required]
     public string Name { get; set; }
     [Required]
-    public Typecontact type { get; set; }
+    public TypeContact Type { get; set; }
     [Required]
-    [Display(Description ="contact")]
-    public string contactvalue { get; set; }
+    [Display(Description ="Contact")]
+    public string Contactvalue { get; set; }
 }
 }
